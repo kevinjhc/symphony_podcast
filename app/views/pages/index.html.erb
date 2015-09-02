@@ -1,3 +1,11 @@
-<% @audio_files.each do |file| %>
-  <%= file.url %>
-<% end %>
+<div id="wrapper">
+  <h1>Symphony Morning Devotionals</h1>
+  <audio preload></audio>
+  <ol>
+  <% @recordings.each do |recording| %>
+    <li>
+      <a href="#" data-src="<%= recording.url %>"><%= recording.title %></a>
+    </li>
+  <% end %>
+  </ol>
+</div>

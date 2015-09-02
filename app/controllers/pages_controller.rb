@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    @audio_files = Recording.all
+    @recordings = Recording.all
   end
 
 end
