@@ -2,9 +2,9 @@
   <h1>Symphony Morning Devotionals</h1>
   <audio preload></audio>
   <ol>
-  <% @recordings.each do |recording| %>
+  <% @feed.each do |feed_item| %>
     <li>
-      <a href="#" data-src="<%= recording.url %>"><%= recording.title %></a>
+      <a href="#" data-src="<%= feed_item.url %>"><%= feed_item.summary.slice(22..feed_item.summary.index("EDT") -2 ) %></a>
     </li>
   <% end %>
   </ol>
