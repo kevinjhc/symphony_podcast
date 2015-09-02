@@ -24,6 +24,7 @@ module SymphonyPodcast
     config.assets.initialize_on_precompile = false
     config.assets.precompile = ['*.js', '*.css', '*.scss', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.woff', '*.eot', '*.svg', '*.ttf', '*.ico']
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.serve_static_assets = true
     
   end
 end
