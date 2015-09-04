@@ -28,3 +28,7 @@ li.playing:before { content: '»'; width: 14px; height: 14px; padding: 3px; line
 @media screen and (max-device-width: 480px) {
   #wrapper { position: relative; left: -3%; }
 }
+
+.audiojs .play {
+  background: url(vendor/player-graphics.gif) !important;
+}
